@@ -14,8 +14,6 @@ namespace Komponente
         private int maxSnaga;
         private int trenutnaSnaga;
 
-        private string proba = "";
-
         public virtual List<SolarniPanel> Paneli { get; set; }
         [Key]
         public string Ime { get => ime; set => ime = value; }

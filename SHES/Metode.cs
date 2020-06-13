@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SHES
 {
     public class Metode : IMetode
@@ -38,6 +39,21 @@ namespace SHES
 
             }
 
+        }
+
+        public void trenutnaSnagaPanela(string ime, int snaga)
+        {
+            SolarniPanel sp = new SolarniPanel();
+
+            foreach (SolarniPanel panel in sp.Paneli)
+            {
+                if(ime == panel.Ime)
+                {
+                    panel.TrenutnaSnaga = panel.MaxSnaga * snaga / 100;
+                    Console.WriteLine("Snaga panela " + panel.Ime + " je izmenjena.");
+                    break;
+                }
+            }
         }
     }
 }

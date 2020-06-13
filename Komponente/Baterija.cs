@@ -13,7 +13,6 @@ namespace Komponente
         private int maksimalnaSnaga;
         private int kapacitet;
 
-        private string nista = "";
 
         public List<Baterija> Baterije { get; set; }
         [Key]
