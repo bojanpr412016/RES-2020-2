@@ -11,6 +11,6 @@ namespace SHES
 {
     public class SHESContex : DbContext
     {
-       public DbSet<SolarniPanel> Paneli { get; set; }
+        public DbSet<Baterija> Baterije { get; set; }
     }
 }
