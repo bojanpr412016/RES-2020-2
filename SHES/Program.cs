@@ -27,6 +27,10 @@ namespace SHES
 
                         break;
                     case 2:
+                        Console.WriteLine("Unesite ime baterije: ");
+                        string baterijaIme = Console.ReadLine();
+                        
+
 
                         break;
                     case 0:
@@ -36,6 +40,10 @@ namespace SHES
                         break;
                 }
 
+            }
+            else
+            {
+                Console.WriteLine("Morate izabrati jednu od postojecih opcija!");
             }
 
 
