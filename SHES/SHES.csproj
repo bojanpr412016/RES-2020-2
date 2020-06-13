@@ -67,10 +67,6 @@
       <Project>{f0183bff-d0bb-43ec-a327-575ce515d883}</Project>
       <Name>Komponente</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SnagaSunca\SnagaSunca.csproj">
-      <Project>{8f9f10c4-62be-41b2-8534-37f6cc12d83e}</Project>
-      <Name>SnagaSunca</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

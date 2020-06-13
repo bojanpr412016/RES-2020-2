@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
 using Komponente;
-using System.Diagnostics;
-using SnagaSunca;
 
 namespace SHES
 {
@@ -24,6 +17,7 @@ namespace SHES
                 Console.WriteLine("0. Izlaz");
                 izbor = Console.ReadLine();
                 Metode m = new Metode();
+                
                 SolarniPanel panel = new SolarniPanel();
                 if (!System.Text.RegularExpressions.Regex.IsMatch("^[0-9]", izbor))
                 {
@@ -55,11 +49,11 @@ namespace SHES
 
                             break;
                         case 3:
-                            Process.Start();
+                            
 
                             break;
                         case 0:
-
+                            
                             break;
                         default:
                             break;
