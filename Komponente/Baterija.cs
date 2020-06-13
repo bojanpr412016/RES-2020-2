@@ -15,7 +15,7 @@ namespace Komponente
         public string Ime { get => ime; set => ime = value; }
         public int MaksimalnaSnaga { get => maksimalnaSnaga; set => maksimalnaSnaga = value; }
         public int Kapacitet { get => kapacitet; set => kapacitet = value; }
-
+        
         public Baterija()
         {
         }
@@ -26,7 +26,6 @@ namespace Komponente
             MaksimalnaSnaga = maksimalnaSnaga;
             Kapacitet = kapacitet;
         }
-
 
     }
 }
