@@ -20,14 +20,11 @@ namespace Komponente
         public int MaxSnaga { get => maxSnaga; set => maxSnaga = value; }
         public int TrenutnaSnaga { get => trenutnaSnaga; set => trenutnaSnaga = value; }
 
-        public SolarniPanel() 
-        {
-            this.Paneli = new List<SolarniPanel>();
-        }
+        public SolarniPanel(){}
 
         public SolarniPanel(string i, int ms)
         {
-            this.Paneli = new List<SolarniPanel>();
+            
             Ime = i;
             MaxSnaga = ms;
         }
