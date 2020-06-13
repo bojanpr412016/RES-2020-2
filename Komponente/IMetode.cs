@@ -10,6 +10,7 @@ namespace Komponente
     {
         void dodavanjePanela(string i, int snaga);
         void dodavanjeBaterije(string i, int ms, int k);
+        
 
     }
 }
