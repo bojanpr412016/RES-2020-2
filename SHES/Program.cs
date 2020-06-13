@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using Komponente;
 using System.Diagnostics;
-using SnagaSunca;
+
 
 namespace SHES
 {
@@ -16,6 +16,7 @@ namespace SHES
         {
             while (true)
             {
+                
                 string izbor = "";
                 Console.WriteLine("Unesite opciju:");
                 Console.WriteLine("1. Dodaj solarni panel");
@@ -55,7 +56,7 @@ namespace SHES
 
                             break;
                         case 3:
-                            Process.Start();
+                            
 
                             break;
                         case 0:

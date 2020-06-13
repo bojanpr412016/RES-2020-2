@@ -1,36 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Komponente;
-using SHES;
+using System.Windows.Forms;
 
 namespace SnagaSunca
 {
-    public class Program 
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            SolarniPanel sp = new SolarniPanel();
-            Metode m = new Metode();
-
-            Console.WriteLine("Lista panela:" + Environment.NewLine);
-
-            foreach(SolarniPanel panel in sp.Paneli)
-            {
-                Console.WriteLine("Ime panela: " + panel.Ime.ToString() + Environment.NewLine);
-            }
-
-            Console.WriteLine("Unesite ime panela za koji zelite da promenite snagu sunca: ");
-            string imePanela = Console.ReadLine();
-            
-
-            Console.WriteLine("Unesite snagu sunca za zadati panel: ");
-            int snagaSunca = Int32.Parse(Console.ReadLine());
-
-            m.trenutnaSnagaPanela(imePanela, snagaSunca);
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new SnagaSuncaForm());
         }
     }
 }
