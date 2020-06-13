@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using Komponente;
 
 namespace SHES
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -18,12 +19,19 @@ namespace SHES
             Console.WriteLine("0. Izlaz");
             izbor = Console.ReadLine();
 
-            if (System.Text.RegularExpressions.Regex.IsMatch("^[0-9]", izbor))
+            if (!System.Text.RegularExpressions.Regex.IsMatch("^[0-9]", izbor))
             {
                 int x = Int32.Parse(izbor);
                 switch (x)
                 {
                     case 1:
+                        Console.WriteLine("Unesite ime panela: ");
+                        string i = Console.ReadLine();
+                        Console.WriteLine("Unesite maksimalnu snagu panela: ");
+                        int snaga = Int32.Parse(Console.ReadLine());
+                        SolarniPanel sp = new SolarniPanel(i, snaga);
+
+                        dodavanjePanela(i, snaga);
 
                         break;
                     case 2:
@@ -37,8 +45,23 @@ namespace SHES
                 }
 
             }
+            else
+            {
+                Console.WriteLine("dobar");
+            }
 
+            void dodavanjePanela(string ime, int maxSnaga)
+            {
+                SolarniPanel sp = new SolarniPanel(ime, maxSnaga);
 
+                using (var db = new SHESContex())
+                {
+                    db.Paneli.Add(sp);
+                    db.SaveChanges();
+                }
+            }
         }
+
+      
     }
 }
