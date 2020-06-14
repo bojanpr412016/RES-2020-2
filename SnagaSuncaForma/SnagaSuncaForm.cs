@@ -13,15 +13,16 @@ namespace SnagaSuncaForma
 {
     public partial class SnagaSuncaForm : Form
     {
+        
         public SnagaSuncaForm()
         {
             InitializeComponent();
         }
+        string ime = "";
 
-        
-        private void SnagaSuncaForm_Load(object sender, EventArgs e)
+        private void buttonIzmeniClick_Click(object sender, EventArgs e)
         {
-            
+            ime = textBoxIme.Text;
         }
     }
 }
