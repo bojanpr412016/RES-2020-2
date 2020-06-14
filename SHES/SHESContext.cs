@@ -6,10 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Komponente;
 
-
 namespace SHES
 {
-    public class SHESContex : DbContext
+    public class SHESContext : DbContext
     {
         public DbSet<Baterija> Baterije { get; set; }
         public DbSet<SolarniPanel> Paneli { get; set; }

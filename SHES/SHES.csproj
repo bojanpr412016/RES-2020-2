@@ -45,7 +45,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,7 +57,7 @@
     <Compile Include="Metode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SHESContex.cs" />
+    <Compile Include="SHESContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -68,10 +67,6 @@
     <ProjectReference Include="..\Komponente\Komponente.csproj">
       <Project>{f0183bff-d0bb-43ec-a327-575ce515d883}</Project>
       <Name>Komponente</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SnagaSuncaForma\SnagaSuncaForma.csproj">
-      <Project>{7949fef2-14cc-4300-832d-d3a2ad1271a1}</Project>
-      <Name>SnagaSuncaForma</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

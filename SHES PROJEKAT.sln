@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHES", "SHES\SHES.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komponente", "Komponente\Komponente.csproj", "{F0183BFF-D0BB-43EC-A327-575CE515D883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnagaSuncaForma", "SnagaSuncaForma\SnagaSuncaForma.csproj", "{7949FEF2-14CC-4300-832D-D3A2AD1271A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnagaSunca", "SnagaSunca\SnagaSunca.csproj", "{75177597-A7B1-4833-9022-EF4437D593BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{F0183BFF-D0BB-43EC-A327-575CE515D883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0183BFF-D0BB-43EC-A327-575CE515D883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0183BFF-D0BB-43EC-A327-575CE515D883}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7949FEF2-14CC-4300-832D-D3A2AD1271A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7949FEF2-14CC-4300-832D-D3A2AD1271A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7949FEF2-14CC-4300-832D-D3A2AD1271A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7949FEF2-14CC-4300-832D-D3A2AD1271A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75177597-A7B1-4833-9022-EF4437D593BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75177597-A7B1-4833-9022-EF4437D593BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75177597-A7B1-4833-9022-EF4437D593BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75177597-A7B1-4833-9022-EF4437D593BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
