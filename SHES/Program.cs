@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using Komponente;
 using System.Diagnostics;
+using SnagaSuncaForma;
+using System.Windows.Forms;
 
 
 namespace SHES
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -26,6 +28,7 @@ namespace SHES
                 izbor = Console.ReadLine();
                 Metode m = new Metode();
                 SolarniPanel panel = new SolarniPanel();
+
                 if (!System.Text.RegularExpressions.Regex.IsMatch("^[0-9]", izbor))
                 {
                     int x = Int32.Parse(izbor);
@@ -56,6 +59,11 @@ namespace SHES
 
                             break;
                         case 3:
+                            SnagaSuncaForm ss = new SnagaSuncaForm();
+
+                            ss.Show();
+
+                            
                             
 
                             break;

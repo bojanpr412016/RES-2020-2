@@ -13,12 +13,13 @@ namespace Komponente
         private string ime;
         private int maxSnaga;
         private int trenutnaSnaga;
+        private List<SolarniPanel> paneli = new List<SolarniPanel>();
 
-        public virtual List<SolarniPanel> Paneli { get; set; }
         [Key]
         public string Ime { get => ime; set => ime = value; }
         public int MaxSnaga { get => maxSnaga; set => maxSnaga = value; }
         public int TrenutnaSnaga { get => trenutnaSnaga; set => trenutnaSnaga = value; }
+        public List<SolarniPanel> Paneli { get => paneli; set => paneli = value; }
 
         public SolarniPanel(){}
 
