@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Komponente;
 
 namespace SnagaSuncaForma
 {
@@ -15,6 +16,12 @@ namespace SnagaSuncaForma
         public SnagaSuncaForm()
         {
             InitializeComponent();
+        }
+
+        
+        private void SnagaSuncaForm_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

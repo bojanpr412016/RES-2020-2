@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using Komponente;
 using System.Diagnostics;
+using System.Windows.Forms;
+using SnagaSuncaForma;
 
 
 namespace SHES
@@ -56,6 +58,8 @@ namespace SHES
 
                             break;
                         case 3:
+                            SnagaSuncaForm ss = new SnagaSuncaForm();
+                            ss.ShowDialog();
                             
 
                             break;
